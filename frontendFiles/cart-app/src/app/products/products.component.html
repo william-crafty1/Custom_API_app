@@ -1,0 +1,30 @@
+<!-- TEST -->
+<div class="header">SHOPPING CART!</div>
+<div class="cart-container">
+    <button class="add-item" (click)="addItem()">Add Items!</button>
+    <div class="legend">
+        <p>id #</p>
+        <p>Product</p>
+        <p>Price</p>
+        <p>Quantity</p>
+        <p>Delete</p>
+        <!-- <p>Edit Quantity</p> -->
+    </div>
+    <div class="cart" *ngFor="let item of cart">
+        <p>{{item.id}}</p>
+        <p>{{item.product}}</p>
+        <p>${{item.price}}</p>
+        <p>{{item.quantity}}</p>
+        <button class="delete" (click)="deleteCartItem(item.id)"><i class="fas fa-dumpster-fire"></i></button>
+        <!-- <button class="edit" (click)="editCartItemQuantity(item.quantity)"></button> -->
+    </div>
+</div>
+<form class="new-item" *ngIf="showForm" #cartForm="ngForm" (submit)="submitItem(cartForm.value)">
+    <label for="product">Product</label>
+    <input type="text" name="product" ngModel>
+    <label for="price">Price</label>
+    <input type="number" name="price" ngModel>
+    <label for="quantity">Quantity</label>
+    <input type="number" name="quantity" ngModel>
+    <button class="submit" type="submit">Submit</button>
+</form>

@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 53, 53);
+    color: whitesmoke;
+    height: 100px;
+}
+.cart-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.legend {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(189, 221, 243);
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.add-item {
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(49, 170, 49);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+.fas {
+    cursor: pointer;
+    font-size: large;
+}
+
+.delete{
+    margin-top: 10px;
+    border-radius: 50%;
+    height: 50px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.new-item{
+    position: absolute;
+    bottom: 50px;
+    left: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 400px;
+    border: 5px solid black;
+    padding: 20px
+}
+
+input {
+    margin: 10px;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+}
+
+.submit {
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-color: rgb(49, 170, 49);
+    height: 30px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
